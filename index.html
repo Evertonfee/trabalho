@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <style>
+        /* Estilos gerais para o corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Estilos para o cabeçalho */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        /* Estilos para o menu de navegação */
+        nav ul {
+            list-style: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para os itens do menu */
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        /* Estilos para os links do menu */
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Estilos para as seções */
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para os títulos */
+        h1 {
+            color: #333;
+        }
+
+        /* Estilos para o formulário */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Estilos para os rótulos do formulário */
+        form label {
+            margin: 10px 0 5px;
+        }
+
+        /* Estilos para os campos de entrada e textarea do formulário */
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Estilos para o botão do formulário */
+        form button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Estilos para o botão do formulário ao passar o mouse */
+        form button:hover {
+            background-color: #555;
+        }
+
+        /* Estilos para os itens do portfólio */
+        #portfolio div {
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para as imagens do portfólio */
+        #portfolio img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilos para as descrições do portfólio */
+        #portfolio p {
+            text-align: center;
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho com navegação -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre-mim">
+        <h1>Sobre Mim</h1>
+        <p>Olá! Me chamo Everton Felipe Borges, tenho 19 anos e moro na cidade de Tijucas do Sul, região metropolitana de Curitiba.
+        Gosto muito de cuidar da minha saúde e do meu físico, por isso, faço exercícios todos os dias e tenho uma boa alimentação.
+        Eu também gosto muito de jogar games, em minhas horas vagas eu sempre jogo um pouco.</p>
+    </section>
+
+    <!-- Seção Formação Educacional e Idiomas -->
+    <section id="formacao">
+        <h1>Formação Educacional e Idiomas</h1>
+        <p>Ensino Médio completo - Colégio Estadual Professor Francisco Manoel de Lima Camargo (2023)
+            <br><br>
+            Cursando Tecnologia em Análise e Desenvolvimento de Sistemas - UNINTER
+            <br><br>
+            Curso básico Pacote Office - Colégio Estadual Professor Francisco Manoel de Lima Camargo (2019)
+        </p>
+    </section>
+
+    <!-- Seção Portfólio -->
+    <section id="portfolio">
+        <h1>Portfólio</h1>
+        <div>
+            <!-- Link para a imagem -->
+            <a href="https://exemplo.com/link-para-imagem">
+                <!-- Imagem -->
+                <img src="trabalho1.png" alt="Trabalho sobre Leonardo da Vinci" width="600" height="200">
+            </a>
+            <p>A partir das aulas 3 e 4 da matéria de Desenvolvimento Web, consegui fazer um projeto de página simples sobre Leonardo da Vinci.</p>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h1>Contato</h1>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
